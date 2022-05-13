@@ -1,0 +1,5 @@
+### Tournament Index
+GET http://localhost:3000/tournaments.json
+
+### Tournament Show
+GET http://localhost:3000/tournaments/1.json

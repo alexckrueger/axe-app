@@ -1,0 +1,10 @@
+@tournaments.map do |tournament|
+  {
+  id: tournament.id,
+  user_id: tournament.user_id,
+  name: tournament.name,
+  format: tournament.format,
+  created_at: tournament.created_at,
+  updated_at: tournament.updated_at
+  }
+end

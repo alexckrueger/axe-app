@@ -1,0 +1,9 @@
+{
+  id: @tournament.id,
+  user_id: @tournament.user_id,
+  name: @tournament.name,
+  format: @tournament.format,
+  players: @tournament.players,
+  matches: @tournament.matches,
+  created_at: @tournament.created_at
+}

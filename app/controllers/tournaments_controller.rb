@@ -1,7 +1,8 @@
 class TournamentsController < ApplicationController
 
   def index
-    # shows all tournaments made by current_user - no associated
+    @tournaments = Tournament.all
+    render :index
   end
 
   def create
@@ -10,6 +11,8 @@ class TournamentsController < ApplicationController
 
   def show
     # shows all information about 1 tournament - allll the data (with associations)
+    @tournament = Tournament.find(params[:id])
+    render :show
   end
 
   def update
