@@ -1,9 +1,20 @@
+
+matches = @tournament.matches.map do |match|
+{
+  id: match.id,
+  tournament_id: match.tournament_id,
+  first_to: match.first_to,
+  round: match.round,
+  players: match.players
+}
+end
+
 {
   id: @tournament.id,
   user_id: @tournament.user_id,
   name: @tournament.name,
   format: @tournament.format,
   players: @tournament.players,
-  matches: @tournament.matches,
-  created_at: @tournament.created_at
+  created_at: @tournament.created_at,
+  matches: matches
 }
